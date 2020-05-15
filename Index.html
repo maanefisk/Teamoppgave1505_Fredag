@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+
+</head>
+<body>
+    <div id="inner"></div>
+
+    <script>
+        // const html = document.getElementById("inner");
+        let kek = wordlist();
+        const html = document.getElementById("inner");
+
+updateView();
+
+        function updateView() {
+            let html= '';
+            html.innerHTML += `
+            <div id="inner"> First word = ${kek[0]}</div>
+            `;
+            return;
+
+            console.log(kek)
+
+        }
+
+
+        console.log('Hello');
+
+        function wordlist() {
+        const wordList = [
+            {word: "Eksistere", gender: "neuter", wordType: "adjective"},
+            {word: "Vidundelig"},
+            {word: 'Klokke', gender: "female", wordType: "substantive"},
+            {word: 'Potet', gender: "male", wordType: "tantive"},
+            {verb: "Jogge"},
+
+        ];
+            return wordList;
+        }
+
+        
+    </script>
+    
+</body>
+</html>
